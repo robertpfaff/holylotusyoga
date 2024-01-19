@@ -1,0 +1,816 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,200&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@100;200;300;500;600;700;800&family=Smooch&display=swap');
+
+/* Default Settings */
+
+/* Breakpoints: 699, 499 */
+
+html,
+body {
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	min-height: 0;
+	min-width: 0;
+	
+	margin: 0 auto;
+}
+
+/* Main Navigation ID */
+
+#header {
+	justify-content: center;
+	align-items: center;
+}
+
+#main-nav {
+	padding: .4rem;
+}
+
+/* Simple Delay Animation */
+
+#animate {
+  animation-duration: .5s;
+  animation-name: animate-fade;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Background Gradient */
+
+.gradient {
+	background:rgb(0,97,242);
+	background:linear-gradient(
+		135deg, rgba(0,97,242,1) 0%,
+		rgba(105,0,199,1) 100%
+);
+}
+
+/* General Emphasis for Content as Needed */
+
+.emphasis {
+	color: gold;
+	font-style: bold;
+}
+
+/* Section Header "#header" */
+
+.container-fluid {
+	margin: 0 auto;
+}
+
+.nav-link {
+	font-size: 1.1rem;
+}
+
+.navbar ul li{
+	padding-right: 10px;
+}
+
+.nav-link:hover {
+	color: #ffcc33;
+}
+
+/* Headline for Home Page content */
+
+.holy-lotus {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-size: 32px;
+	color: gold;
+/* padding top offsets navigation bar */	
+	padding-top: 4rem;
+	padding-bottom: 1.5rem;
+}
+
+.page-header {
+	margin-top: 5.25rem;
+	font-size: 1.1rem;
+	color: white;
+}
+
+.page-header img {
+	padding-top: 1rem;
+	cursor: pointer;
+}
+
+.page-header h2 {
+	padding-top: 1rem;
+}
+
+.page-header ul {
+	color: white;
+	padding-left: .5rem;
+	font-size: 1.1rem; 
+	list-style-type: none;
+}
+
+/* orange bubble special offer */
+
+#orange-bubble {
+	display: block;
+	min-height: 180px;
+	min-width: 180px;
+	position: relative;
+	top: -50px;
+	right: -20px;
+	z-index: 100;
+}
+
+/* red holiday present */
+
+#xmas-cta {
+	display: inline-block;
+	position: relative;
+	top: -90px;
+	left: -50px;
+	max-width: 440px;
+	max-height: 356px;
+	min-width: 200px;
+	min-height: 162px;
+	flex: 1;
+	z-index: 100;
+}
+
+/* bootstrap 5 link color variants */
+
+.link-offset-2 {
+	color: #ffcc33;
+}
+
+.link-offset-2:hover {
+	color: #FFDD77;
+}
+
+.logo {
+	min-width: 25px;
+	min-height: 25px;
+	max-width: 85px;
+	max-height: 85px;
+	width: 100%;
+}
+
+/* Media Queries for Home Page */
+
+@media (max-width: 799px){
+	
+	#home_woman {
+		display: none;
+	}
+	#orange-bubble {
+		justify-content: center;
+	}
+	#xmas-cta {
+		justify-content: center;
+		align-items: center;	
+	}
+}
+
+@media (max-width: 499px){
+	.holy-lotus {
+		font-size: 1.6rem; 
+	}
+	.page-header p {
+		font-size: 1rem;
+		padding: 0;
+	}
+	.page-header ul li {
+		font-size: 1rem;
+	}
+	#orange-bubble {
+		width:  280px;
+		height: 280px;
+	}
+	#xmas-cta {
+		width: 380px;
+		height: 300px;
+		justify-content: center;
+	}
+}
+
+/*  ------------------------------  */
+
+/* Start of Client Testimonials */
+
+.testimonials-section {
+	display: block;
+}
+
+#test-waves-top-svg {
+	display: flex;
+}
+
+.meet-our-clients {
+	display: block;
+	position: relative;
+	top: -50px;
+	text-align: center;
+	width: 100%;
+	color: #373636;
+}
+
+#testimonials-container {
+	display: flex;
+	position: relative;
+	top: -90px;
+}
+
+.testimonials-row {
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	top: 6rem;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.testimonials {
+	display: flex;
+	position: relative;
+	top: 0;
+	row-gap: 20px;
+	flex-flow: row wrap;
+	background-repeat: no-repeat;
+	background-position: center;
+	object-fit: cover;
+	background-color: #F2F3F5;
+	border-radius: 20px;
+	border: 1px solid #807E7E;
+	justify-content: space-evenly;
+	width: 29%;
+}
+
+.headshot {
+	padding: 20px;
+	margin-top: 1.5rem;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+.headshot:nth-child(1) {
+	background-image: url("../img/clients/client1_test.png" class="img-fluid" alt="dr. leonard prudent plastic surgeon");	
+}
+
+.headshot:nth-child(2) {
+	background-image: url("../img/clients/client2_test.png" class="img-fluid" alt="joyce watkins cfa anderson investments");
+}
+
+.headshot:nth-child(3) {
+	background-image: url("../img/clients/client3_test.png" class="img-fluid" alt="carissa jameson partner alston king");	
+}
+
+.intro-quote {
+	width: calc(99% - 3rem);
+	left: 1rem;
+	background-color: white;
+	border: 1px solid #807E7E;
+	border-radius: 2rem;
+	margin-bottom: 1.5rem;
+	filter: drop-shadow(0 0 0.75rem lightgrey);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+blockquote {
+	color: #605F5F;
+	padding-top: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	width: 90%;
+	font-family: "Playfair Design", "Segoe", serif;
+	font-size: 1.5rem;
+	line-height: 1.25em;
+}
+
+blockquote cite {
+	position: relative;
+	top: 0;
+	font-size: 20px;
+	font-style: italic;
+}
+
+blockquote:before {
+	font-family:  "Playfair Design", "Segoe", serif;
+	display: block;
+	padding-left: 1rem;
+	content: " \201C";
+	font-size: 80px;
+	position: absolute;
+	top: 13px;
+	left: -18px;
+	color: #8B8888
+}
+
+blockquote cite:before {
+	content: "- "
+}
+
+/* Media Queries for Testimonial Section */
+
+@media (max-width: 799px){
+	
+	.header-grid {
+		justify-content: center;
+		align-items: center;
+	}
+	.meet-our-clients {
+		position: relative;
+		top: 0px;
+	}
+	#home_col1 {
+		width: 80%;
+	}
+	.testimonials-container {
+		display: flex;
+	}
+	.testimonials-row {
+		display: flex;
+		flex-direction: column;
+		place-content: center;
+		gap: 20px;
+	}
+	.testimonials {
+		width: 80%;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	intro-quote {
+		border-radius: 20px;
+	}
+	intro-quote-content {
+		border-radius: 20px;
+	}
+}
+
+.intro-image {
+	position: relative;
+	top: 5px;
+	padding: 2rem;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro-image img {
+	position: relative;
+	top: 0px;
+	display: flex;
+	border-radius: 2rem;
+	border: 1px solid #807E7E;
+	padding: 15px;
+	background-color: white;
+	max-width: 400px;
+	max-height: 400px;
+	min-width: 200px;
+	min-height: 200px;
+}
+
+.intro-quote {
+	width: calc(92% - 3rem);
+	position: relative;
+	top: -10px;
+	left: 2rem;
+	background-color: white;
+	border: 1px solid #807E7E;
+	border-radius: 2rem;
+	margin-bottom: 1.5rem;
+	filter: drop-shadow(0px 16px 24px rgba(0,0,0,0,.07))
+	drop-shadow(0 6px 30px rgba(0,0,0,0.06))
+	drop-shadow(0 8px 10px rgba(0,0,0,.1));
+	display: flex;
+}
+
+blockquote {
+	position: relative;
+	top: 0px;
+	color: #605F5F;
+	padding-top: 1rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	width: 90%;
+	font-family: "Playfair Design", "Segoe", serif;
+	font-size: 1.5rem;
+	line-height: 1.25em;
+}
+
+blockquote:before {
+	font-family:  "Playfair Design", "Segoe", serif;
+	display: block;
+	padding-left: 1rem;
+	content: " \201C";
+	font-size: 80px;
+	position: absolute;
+	top: 13px;
+	left: -18px;
+	color: #8B8888
+}
+
+blockquote cite:before {
+	content: "- "
+}
+
+@media (max-width: 1199.98px) {
+	
+	.testimonial {
+		max-width: 300px;
+		filter: drop-shadow(0px 16px 24px rgba(0,0,0,0,.07))
+			drop-shadow(0 6px 30px rgba(0,0,0,0.06))
+			drop-shadow(0 8px 10px rgba(0,0,0,.1));
+	}
+	
+	.intro-image {
+		margin: 0;
+		width: initial;
+	}
+	
+	.intro-image img {
+		border-radius: 0;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		
+		}
+	
+	.intro-quote {
+		border-radius: 0;
+		position: initial;
+		width: initial;
+		padding: 1rem 0;
+		filter: initial;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	blockquote {
+		margin: 0;
+		padding-right: 2rem;
+	}
+}
+
+/* End of Media Queries */
+
+/* End of Testimonial Section */
+
+/* Start Newsletter section */
+
+#waves-banner-png {
+	opacity: 85%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	z-index: 0;
+}
+
+.newsletter {
+	position: relative;
+	top: -40px;
+}
+
+.newsletter-row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.lets-get-flexible {
+	font-family: "Smooch", serif;
+	font-size: 3.8rem;
+	color: white;
+	flex: 1;
+	width: 100%;
+}
+
+#emailInput {
+	border-radius: 20px;
+}
+
+.newsletter-col1 {
+	position: relative;
+	top: -10px;
+	flex: 1;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	min-width: 350px;
+	max-width: 600px;
+}
+
+.newsletter-col2 {
+	position: relative;
+	top: -50px;
+	flex: 1;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	min-width: 350px;
+	max-width: 600px;
+}
+
+#image-brain {
+	margin-top: -40px;
+	padding-bottom: 1rem;
+}
+
+.lets-get-flexible {
+	position: relative;
+	top: 50px;
+}
+
+#newsletter-button {
+	position: relative;
+	left: 1.8rem;
+	background-color: #DC0469;
+	border-radius: 20px;
+	height: 3rem;
+}
+
+.news-content {
+	position: relative;
+	top: 3rem;
+	color: white;
+	line-height: 1.5;
+	font-size: 1.25rem;
+}
+
+@media (max-width: 699px) {
+	.newsletter {
+		position: relative;
+		top: 45px;
+	}
+	.news-content {
+		position: relative;
+		top: 10px;
+	}
+}
+
+/* End of Newsfeed/lettter Section */
+
+/* Start of Teachers Section */
+
+.teachers-section {
+	position: relative;
+	top: 0px;
+}
+
+#teach {
+	background-color: transparent;
+}
+
+#teachers-waves-top {
+	position: relative;
+	top: -40px;
+}
+
+.meet-our-teachers {
+	position: relative;
+	top: -140px;
+	width: 100%;
+	text-align: center;
+	color: #373636;
+}
+
+.accordion {
+	position: relative;
+	top: -4.5rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.teacher-photo {
+	min-width: 150px;
+	min-height: 150px;
+	max-width: 350px;
+	max-height: 350px;
+	padding: 10px;
+	background-color: #EAF5F8;
+	border: 2px solid #C3C1C1;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.teacher-bio {
+	display: inline-block;
+	color: #2A2929;
+	margin-left: 2rem;
+	padding-left: 1rem;
+}
+
+.teacher-bio-min {
+	display: none;
+}
+
+.teacher-row {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.testimonials-section svg {
+    stroke: none;
+    stroke-width: 0px;
+	position:  relative;
+	top: 60px;
+	z-index: 100;
+}
+
+.testimonials-section {
+	background-color: transparent; 
+}
+
+
+@media (max-width: 799px) {
+	
+	.teacher-bio {
+		display: none;
+	}
+	
+	.teacher-bio-min {
+		display: inline-block;
+		position: relative;
+		top: 0px;
+		padding-left: 1rem;
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+}
+}
+
+/* Start Register section */
+
+.register-top-waves {
+	position: relative;
+	top: 0px;
+	z-index: 100;
+	outline: 1px solid blue;
+}
+
+.register-section {
+	position: relative;
+	top: 0px;
+	left:  25px;
+	padding: 1rem;
+	width: 100%;
+	outline: 3px dotted pink;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.register-container {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 95%;
+}
+
+#reg-header {
+	outline: 1px solid blue;
+	position: relative;
+	top: -80px;
+	width: 80%;
+	color: #1b1b1b;
+	text-align: left;
+	left: 40px;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	flex: 1;
+	
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#staff {
+	outline: 1px solid blue;
+	position: relative;
+	top: -110px;
+	left: 40px;
+}
+
+.register-row {
+	position: relative;
+	top: -20px;
+	display: flex;
+	flex: 1;
+	justify-content: flex-start;
+	align-items: center;
+	width: 90%;
+	gap: 5px; 
+}
+
+#register-form {
+	position: relative;
+	top: -50px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	background-color: white;
+	width: 96%;
+	gap: 5px;
+	z-index: 50;
+}
+
+#form {
+	display: flex;
+	width: 85%;
+	justify-content: space-evenly;
+	align-items:flex-start;
+}
+
+#register-image {
+	position: absolute;
+	top: -300px;
+	left: 800px;
+	z-index: 50;
+	overflow: hidden;
+	
+	max-height: 852px;
+	max-width: 600px;
+}
+
+.form-check-input {
+	border: 1px solid gray;
+}
+
+#teach-waves-bottom {
+	position: relative;
+	top: -30px;
+	left: 0px;
+	width: 100%;
+	height: 15rem;
+	z-index: 99;
+	border-bottom: 2px solid whitesmoke;
+}
+
+footer {
+	font-family: "Poppins", sans-serif;
+	background-color: white;
+	color: #1b1b1b;
+	line-height: 1;
+	padding-top: 0rem;
+	height: 100%;
+}
+
+.address {
+	font-weight: 300;
+	width: 100%;
+}
+
+.phone {
+	font-weight: 300;
+	width: 100%;
+}
+
+.website {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.website a {
+	font-weight: 300;
+	width: 100%;
+	color: #0044ff;
+}
+
+.website a:hover {
+	color: #0099ff;
+}
+
+#map {
+	height: 400px;
+	width: 400px;
+	border: 3px dotted red;
+	margin-bottom: 3rem;
+}
+
+.directions {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	width: 100%;
+}
+
+.copyright {
+	padding-top: 3rem;
+	font-family: "Poppins", sans-serif;
+	font-size: .85rem;
+	width: 50%;
+}
+
+@media (max-width: 799px){
+	#register-image {
+		display: none;
+	}
+}
