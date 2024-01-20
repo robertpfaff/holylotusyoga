@@ -314,23 +314,24 @@
 </div>
 <!-- End Teachers Section -->
 </section>
-<!-- Top waves for Register Section -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" id="teachers-waves-bottom" d="M0,224L48,192C96,160,192,96,288,58.7C384,21,480,11,576,48C672,85,768,171,864,218.7C960,267,1056,277,1152,282.7C1248,288,1344,288,1392,288L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
 	
 <!-- Start of Register Section -->
 	
 <section class="register-section">
+
+<!-- Start of Register Container (Header) -->
+	
+<div class="container-fluid register-container">
+<!-- Top waves for Register Section -->
+<img src="img/register-waves-top.png" class="img-fluid" id="register-waves-top" alt="register waves top">
 <div class="register-cta">
   <div id="register-header"><h1>Please join us.</h1></div>
-  <h4 id="register-subhead"> Our staff will contact you in one business day.</h4>
+  <h4 id="register-subhead"> We will contact you in one business day.</h4>
 </div>
 	
-<div id="container-fluid register-container">
-
 <div class="row register-row">
-	
-<div class="col-md-6" id="register-form-column">
-	
+<div class="col-lg-9 register-form">
 <!-- Start of Form -->
 <form class="row g-3 needs-validation register-form-row" novalidate>
   <div class="col-md-4" id="first_name">
@@ -401,7 +402,7 @@
       </div>
     </div>
   </div>
-	
+
 <div class="col-12" id="submit">
 	<button class="btn btn-primary" type="submit">Submit </button>
   </div>
@@ -409,16 +410,49 @@
 </form>
 <!-- End of Form Column-->
 </div>
-<!-- End of Form Row-->
+         <div class="col-lg-3 register-image-row">
+            <div class="register-image-div"><img src="img/love-you-trans-crop.png" class="img-fluid" id="register-main-image" alt="register form love yourself image"/> 
+			 </div>
+        </div>
+    </div>
 </div>
-<!-- Start of Register Container -->
-</div>
-	
-<img src="img/full-torso-love-you-trans-700-994.png" class="img-fluid" id="register-main-image" alt="register form love yourself image"/> 
-
-<img src="img/waves_bottom.png" class="img-fluid" id="register-waves-bottom" alt="waves bottom register"/>	
-	
+	<img src="img/waves_bottom.png" class="img-liquid" id="register-bottom-waves" alt="register bottom waves"/> 
 </section>
 
+<footer>
+	
+<section class="d-block footer-section">
+<span class="d-block p-2 address">
+	<p>1919 South Windermere Boulevard</p>
+	<p>Suite 6-A Charleston, SC 29462</p>
+</span>
+<span class="d-block p-2 phone">
+<strong>Phone:</strong> 843-555-1235
+</span>
+<span class="d-block p-2 website">
+<strong>Website:</strong> Please visit <a href="holylotus.net"> holylotus.net</a>
+</span>
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/jskey=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=initMap">
+ </script>
+	<script>
+    onload="InitMap()">
+    <script type="text/javascript">
+    function InitMap() {
+        console.log('at maps');
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 10,
+                    center: { lat: -34.397, lng: 150.644 }
+                });
+    }
+    </script>
+<span class="d-block p-2 copyright">
+	<p>© Robert Pfaff, Holy Lotus Yoga LLC, All Rights Reserved, 2023</p>
+</span> 
+
+</section>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>	
 </body>
 </html>
