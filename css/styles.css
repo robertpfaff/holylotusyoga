@@ -5,21 +5,23 @@
 
 /* Default Settings */
 
-/* Breakpoints: 699, 499 */
+/* Breakpoints: 999, 799, 499 */
 
 html,
 body {
 	font-family: 'Poppins', sans-serif;
 	box-sizing: border-box;
+	/* supposed to prevent overflow */
 	min-height: 0;
 	min-width: 0;
-	
+	/* position all section in middle */
 	margin: 0 auto;
 }
 
 /* Main Navigation ID */
 
-#header {
+#header-section {
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -111,6 +113,11 @@ body {
 	list-style-type: none;
 }
 
+.home-page-content {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
 /* orange bubble special offer */
 
 #orange-bubble {
@@ -138,7 +145,7 @@ body {
 	z-index: 100;
 }
 
-/* bootstrap 5 link color variants */
+/* bootstrap 5 link color variants for navbar */
 
 .link-offset-2 {
 	color: #ffcc33;
@@ -148,6 +155,8 @@ body {
 	color: #FFDD77;
 }
 
+/* logo in navbar */
+
 .logo {
 	min-width: 25px;
 	min-height: 25px;
@@ -156,7 +165,7 @@ body {
 	width: 100%;
 }
 
-/* Media Queries for Home Page */
+/* Media Queries for Header Section */
 
 @media (max-width: 799px){
 	
@@ -167,8 +176,7 @@ body {
 		justify-content: center;
 	}
 	#xmas-cta {
-		justify-content: center;
-		align-items: center;	
+		display: none;	
 	}
 }
 
@@ -193,8 +201,6 @@ body {
 		justify-content: center;
 	}
 }
-
-/*  ------------------------------  */
 
 /* Start of Client Testimonials */
 
@@ -417,7 +423,6 @@ blockquote cite:before {
 		border-radius: 20px;
 	}
 }
-
 
 @media (max-width: 1199.98px) {
 	
@@ -688,24 +693,33 @@ blockquote cite:before {
 /* Start of Register Section */
 
 register-section {
-	display: block;
+	display: flex;
+	position: relative;
+	top: 0px;
+	left:0px;
 	flex: 1 1 auto;
 	background-color: white;
-	max-width: 100%;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 register-container {
 	position: relative;
 	top: 0px;
 	flex: 1 1 auto;
-	max-width: 100%;
+	
+	margin-left: 0;
+	padding-left: 0;
+	width: 100%;
 }
 
 #register-waves-top {
 	position: relative;
-	top: 0px;
+	top: -10px;
+	width: 110%;
 	flex: 1 1 auto;
-	max-width: 110%;
+	overflow: hidden;
 	z-index: 100;
 }
 
@@ -715,34 +729,40 @@ register-container {
 	top: -50px;
 	left: 100px;
 	flex: 1 1 auto;
-	max-width: 50%;
+	max-width: 80%;
 	
 	display: inline-block;
+}
+
+.register-cta-min-pic {
+	display: none;
+	text-align: center;
 }
 
 .register-row {
 	position: relative;
 	top: 0px;
+	left: 2rem;
 	flex: 1 1 auto;
-	width: 100%;
+	width: 60%;
 	display: flex;
-	align-items: flex-start;
 }
 
 .register-form {
-	justify-content: space-evenly;
 	flex: 1 1 auto;
-	width: 60%;
+	width: 90%;
 	z-index: 100;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .register-form-row {
 	position: relative;
 	top: 0px;
-	width: 85%;
+	width: 100%;
 	z-index: 100;
 	display: flex;
-	justify-content: space-evenly;
 	flex: 1 1 auto;
 }
 
@@ -752,12 +772,11 @@ register-container {
 
 .register-image-div {
 	position: absolute;
-	top: -320px;
-	left: 825px;
+	top: -263px;
+	left: 800px;
 	width: 100%;
 	z-index: 0;
 	flex: 1 1 auto;
-	align-items: flex-start;
 	overflow: hidden;
 }
 
@@ -767,23 +786,69 @@ register-container {
 	z-index: 0;
 	flex: 1 1 auto;
 	align-items: flex-start;
+	overflow: hidden;
 }
 
-#register-bottom-waves {
+#register-waves-bottom {
 	position: relative;
-	top: -10px;
+	top: 0px;
 	z-index: 50;
 	background-color: transparent;
 	flex: 1 1 auto;
 }
 
-footer {
+@media (max-width: 799px) {
+	.register-image-div {
+		display: none;
+	}
+	.register-cta {
+		display: none;
+	}
+	#register-waves-top {
+		display: none;
+		z-index: 0;
+	}
+	.register-cta-min-pic {
+		display: block;
+		position: relative;
+		top: 0px;
+		left: 50px;
+		color: #0099ff;
+		width: 90%;
+		z-index: 100;
+		padding-top: .5rem;
+	}
+
+
+@media (max-width: 499px) {
+	.register-image-div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.register-cta-min-pic {
+		display: flex;
+		
+	}
+}
+
+/* Footer Copyright Sections*/
+
+.footer-col1 {
 	background-color: #89CFF0;
-	width: 100%;
+	color: #1E33B0;
+	width: 50%;
 }
-.address {
-	line-height: 1rem;
+	
+.footer-col2 {
+	background-color: #89CFF0;
+	color: #1E33B0;
+	width: 50%;
 }
+	
+.phone {
+		color: black;
+	}
 
 .website:a {
 	color: #8C78CF;
@@ -791,14 +856,7 @@ footer {
 
 .copyright {
 	margin-top: 3rem;
-	font-size: 75%;
+	font-size: 60%;
 }
 
-@media (max-width: 899px) {
-	.register-image-div {
-		display: none;
-	}
-	#register-main-image {
-		display: none;
-	}
 }

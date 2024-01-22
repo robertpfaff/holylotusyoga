@@ -1,65 +1,93 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<!-- Header -->
+	
+  <head id="header">
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  
-	  <title>Robert Pfaff CSS Flex Club Page Project with Bootstrap 5</title>
+	  <title>Robert Pfaff CSS Flex Club Page Project "Yoga over 50" with Bootstrap 5</title>
+	  
+<!-- Bootstrap Links -->
 
 	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	  
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet"/>
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet"/>
+	  
+<!-- Google API Script -->
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=initMap" async defer>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=initMap" async defer>
 </script>
 
 <link href="css/styles.css" rel="stylesheet">
 	  
 </head>
 	
+<!--  HTML Body Start -->
 <body>
+
+<!-- Main Navigation -->
 	
-<nav class="navbar navbar-expand-lg navbar-blue bg-light fixed-top align-items-center justfy-content-center" id="main-nav">
+	<nav class="navbar navbar-expand-md navbar-blue bg-light fixed-top align-items-center justfy-content-center" id="main-nav">
+		
 <div class="container">
+
+<!--  Simple Fade In Animation -->
+
 <div class="logo" id="animate">
 <img src="img/holy_lotus_logo_sm.gif" width="85" height="85" alt="holy lotus yoga logo"/></div>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button> 
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+	
+<!--  UL links with anchors -->
+	
 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+	
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#main-nav">Home</a>
+        <a class="nav-link" href="#tag-home">Home</a>
       </li>
+		
       <li class="nav-item">
         <a class="nav-link" href="#tag-clients">Testimonials</a>
       </li>
-	  <li class="nav-item">
-        <a class="nav-link" href="#tag-subscribe">Join us!</a>
-      </li>
+		
       <li class="nav-item">
-        <a class="nav-link" href="#tag-teach">Teachers</a>
+        <a class="nav-link" href="#tag-news">Newsletter</a>
       </li>
+		
 	<li class="nav-item">
-        <a class="nav-link" href="#tag-contact">Contact</a>
-      </li>
+		<a class="nav-link" href="#tag-teachers">Teachers</a>
+    </li>
 		<li class="nav-item">
-        <a class="nav-link" href="#tag-directions">Directions</a>
+        <a class="nav-link" href="#tag-register">Register</a>
       </li>
     </ul>
   </div>
 	</div>
 </nav>
-<section class="gradient d-flex" id="header">
+
+<!-- Start Page Header Section -->
+	
+<!-- Menu Tag for Home -->
+	<div id="tag-home"></div>
+	
+<section class="header gradient" id="header-section">
 <header class="page-header d-flex">
 	<div class="container-fluid">
-    <div class="grid-5" id="header-grid">
+    <div class="grid-6" id="header-grid">
 		<div class="row header-row align-items-start justify-content-center">
-    <div class="col-md-5" id="home_col1">
-      <div class="yoga-over-fifty-cta" id="yoga-over-fifty-cta">
+    <div class="col-md-6" id="home_col1">
+      <div class="home-page-content" id="yoga-over-fifty-cta">
+		  
+<!-- Holy Lotus Yoga Logo  -->
+		  
 <div class="holy-lotus">Holy Lotus Yoga Studio</div>						  
  <p><strong>Holy Lotus Yoga</strong> - now celebrating 25 years in business - invites you to join our Yoga over 50 Club with a special holiday offer to meet the needs of our mature members.</p>
 
+<!-- Selling Points -->
 <ul>
 	<li class="list-group-item" aria-disabled="true"><i class="bi bi-yin-yang"></i> &nbsp; Yoga Classes for All Bodies, All Levels</li>
 	<li class="list-group-item emphasis" aria-disabled="true"><i class="bi bi-yin-yang"></i> &nbsp; <strong>Classes Online &amp; In-Studio</strong></li>
@@ -67,37 +95,54 @@
 	<li class="list-group-item" aria-disabled="true"><i class="bi bi-yin-yang"></i> &nbsp; Private &amp; Group Lessons</li>
 	<li class="list-group-item" aria-disabled="true"><i class="bi bi-yin-yang"></i> &nbsp; Incentive Programs for Focus</li>
 </ul>
+		  
+<!-- Home Page Intro Content -->
 		 
 <p>Subscription rates return to normal ($99 per month) on December 31, 2023. This deal includes $49.95 or 50% off your first month with unlimited classes.</p>
 		  
 <p>Call us at <strong>843-555-6391</strong> or email <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> support@holylotus.com </a> with your questions. Or complete the registration form below.&nbsp;</p>
 <p>We respond by the next business day.</p>
 <p>If you'll pardon the pun, there's never a better time to start than the present. Click below to unwrap it!</p></div>
-<div class="holiday-call-to-action"><img src="img/1000-trans-holiday-gift-50-discount-png.png" class="img-fluid" id="xmas-cta" alt="click here for half off first month details"/>		
+
+<!-- Home Page Intro Content -->
+
+<div class="red-holiday-present"><img src="img/1000-trans-holiday-gift-50-discount-png.png" class="img-fluid" id="red=present-cta" alt="click here for half off first month details"/>		
 </div>
+<!-- End of Column One Header Section -->
 </div>
-<div class="col-md-5" id="home_col2">
+
+<!-- Start of Header Section Column Two -->
+<!-- Contents: Mwditating Woman & Orange Bubble CTA -->		
+<div class="col-md-6" id="home_col2">
 <img src="img/bevel-png-woman-meditation-trans-lotus.png" id="home_woman" class="img-fluid" alt="black woman holy lotus yoga half off first month"/>		
 <img src="img/475-orange-bubble-trans-cta.png" id="orange-bubble" alt="orange bubble $49 first month cta"/>
 </div>
 </div>
-<!-- end of grid -->
+<!-- End of Grid -->
 </div>
 </div>
-
 </header>
 </section>
+	
+<!-- Start Testimonials Section -->
+	
 <section class="testimonials-section">
 <img src="img/svg-waves-tests-top.svg" id="test-waves-top-svg" class="img-fluid" alt="test waves top"/>
+	
+<!-- Menu Tag for Home -->
 <div id="tag-clients"></div>
-	<div class="meet-our-clients"><h1>Meet Our Clients</h1>
-	</div>
+	
+<!-- Header -->
+	<div class="meet-our-clients"><h1>Meet Our Clients</h1></div>
 <div class="container-fluid" id="testimonials-container">
 
 <div class="row testimonials-row">
     
-<div class="col-lg-4 testimonials" id="testimonial1">
-    
+<!-- Three columns for testimonials -->	
+<div class="col-md-4 testimonials" id="testimonial1">
+ 
+<!-- First Testimoniial -->
+
 <div class="headshot" id="headshot1">
 <img src="img/clients/client1_test.png" class="img-fluid" alt="dr. leonard prudent plastic surgeon"/> 
 </div>
@@ -114,7 +159,9 @@
 </div>
 </div>
 
-<div class="col-lg-4 testimonials" id="testimonial2">
+<!-- Second Testimoniial -->	
+	
+<div class="col-md-4 testimonials" id="testimonial2">
     
 <div class="headshot" id="headshot2">
 <img src="img/clients/client2_test.png" alt="mrs. joyce watkins cfa anderson investments" class="img-fluid"/>
@@ -132,7 +179,10 @@
 </div>
 </div>
 </div>
-<div class="col-lg-4 testimonials" id="testimonial3">
+
+<!-- Third Testimoniial -->
+	
+	<div class="col-md-4 testimonials" id="testimonial3">
 <div class="headshot" id="headshot3">
 <img src="img/clients/client3_test.png" alt="carissa jameson attorney general testimonial" class="img-fluid"/>
 </div>
@@ -149,19 +199,22 @@
 </div>
 </div>
 </div>
+	
 </div>
 
 <!-- End of Testimonials Section -->
+	
 </section>
 	
 <!-- Start of Newsletter Section -->
 
 <img src="img/waves-banner-png.png" id="waves-banner-png" class="img-fluid" alt="waves"/>
-
+	<div id="tag-news"></div>
 <section class="newsletter gradient">
-  <div class="container-fluid newsletter-container">
-<div class="row newsletter-row">
 	
+  <div class="container-fluid newsletter-container">
+<div class="row newsletter-row" >
+<!-- Image Man Brain Yoga -->
 <div class="col-md-6 newsletter-col1">
 <div class="brain d-flex">
 	 <img src="img/brain_health_png.png" class="img-fluid" id="image-brain" alt="brain yoga health over 50"/>
@@ -178,8 +231,14 @@
 </div>
 </div>
 <div class="col-md-6 newsletter-col2">
+
 	<div class="lets-get-flexible">Let's Get Flexible</div>
 	<div class="news-content">
+		
+		
+<!-- Newsletter Call to Action -->		
+		
+		
 <p>Have you subscribed to our newsfeed?</p>
 		
 <p>Yoga combines the benefits of both physical exercise and meditation. As we age, the benefits of a consistent practice become paramout to longevity and mental acuity.</p>
@@ -194,15 +253,26 @@
 </section>
 
 <!-- Start of Teacher Section -->
+	
 <section class="teachers-section">
-<svg id="teachers-waves-top"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,133.3C384,128,480,96,576,80C672,64,768,64,864,64C960,64,1056,64,1152,80C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+	
+	<!-- Menu Tag for Teachers -->
+	<div id="tag-teachers"></div>
+	
+<!-- SVG for Top Waves -->
+	
+	<svg id="teachers-waves-top"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,133.3C384,128,480,96,576,80C672,64,768,64,864,64C960,64,1056,64,1152,80C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 </svg>
 <div class="meet-our-teachers">
   <h1>Meet Our Teachers</h1>
 	</div>
+	
+	<!-- Replaces h1 header at 499px-->
 <div class="meet-our-teachers-min">
   Meet Our Teachers
 </div>
+
+<!-- Start of Teacher Accorrdion -->	
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
@@ -213,6 +283,7 @@
      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div class="accordion-body">
       
+<!-- Barbara Hadler, Founder CEO -->
 <div class="accordion-body">
 <div class="teacher-container">
   <div class="teacher-row" id="teacher1-row">
@@ -227,7 +298,7 @@
 </div>
 </div>
 </div>
-
+<!-- David Price -->
 <div class="accordion-item">
 	<h2 class="accordion-header" id="headingTwo">
 		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -240,6 +311,9 @@
   <div class="teacher-row" id="teacher2-row">
     <div class="teacher-photo" id="teacher2-photo"><img src="img/teachers/teacher2.png" class="img-fluid" alt="David Price"/></div>
 	  <div class="teacher-bio" id="teacher2-bio"><strong>David Price</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, rerum, dolorum? Reprehenderit accusamus similique quae, id voluptatibus ad pariatur dolores eveniet obcaecati doloribus, reiciendis sunt! Corporis adipisci mollitia in dolores dolorum eligendi recusandae deserunt totam repellat earum dicta, exercitationem tempora, veritatis natus sequi fugit ipsa voluptatibus a sunt nam quod.</div>
+	  
+	  <!-- Minimum bio for small screens -->
+	  
 	  <div class="teacher-bio-min">
 	  David reprehenderit accusamus similique adipisci mollitia in dolores. Email him at <a href="#">david@holylotus.net</a>
 	  </div>
@@ -248,6 +322,7 @@
 </div>
 </div>
 </div>
+	  <!-- Maria Garcia -->
 <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -268,7 +343,7 @@
 </div>
 </div>
 </div>
-	
+	<!-- Chrstine Wenthe -->
 <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -289,6 +364,9 @@
 </div>
 </div>
 </div>
+	  
+<!-- Denise Parker -->	  
+	  
 <div class="accordion-item">
     <h2 class="accordion-header" id="headingFive">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -314,26 +392,36 @@
 </div>
 <!-- End Teachers Section -->
 </section>
-
 	
 <!-- Start of Register Section -->
+<!-- Menu Tag for Register -->
 	
-<section class="register-section">
+<div id="tag-register"></div>
 
-<!-- Start of Register Container (Header) -->
+<section class="register-section">
 	
-<div class="container-fluid register-container">
 <!-- Top waves for Register Section -->
-<img src="img/register-waves-top.png" class="img-fluid" id="register-waves-top" alt="register waves top">
-<div class="register-cta">
-  <div id="register-header"><h1>Please join us.</h1></div>
-  <h4 id="register-subhead"> We will contact you in one business day.</h4>
-</div>
+
+<div class="reg-waves-top"><img src="img/last-tests-top-waves-png.png" id="register-waves-top" class="img-fluid" alt="register top waves"/></div>
 	
+
+<div class="container-fluid register-container">
+<!-- Register call to action -->
+	
+<div class="register-cta">
+	<div id="register-header"><h2>Yoga over 50. Join us today.</h2></div>
+	<div><h3 id="register-subhead"> We will contact you in one business day.</h3></div>
+	</div>
+
+<div class="register-cta-min-pic">
+	<img src="img/register-cta-gif-700.gif" class="img-fluid" alt="register call to action flex gif"/> </div>
+
 <div class="row register-row">
-<div class="col-lg-9 register-form">
+<div class="col-md-9 register-form">
 <!-- Start of Form -->
-<form class="row g-3 needs-validation register-form-row" novalidate>
+<form class="row g-1 needs-validation register-form-row" novalidate>
+	
+	<!-- First Name -->
   <div class="col-md-4" id="first_name">
 	  <label for="validationCustom01" class="form-label">First name</label>
     <input type="text" class="form-control" id="validationCustom01" value="" required>
@@ -341,7 +429,8 @@
       Looks good!
 	</div>
 </div>
-	
+
+<!-- Last Name -->
 <div class="col-md-4" id="last_name">
 	<label for="validationCustom02" class="form-label">Last name</label>
 	<input type="text" class="form-control" id="validationCustom02" value="" required>
@@ -349,7 +438,8 @@
     Looks good!
     </div>
 </div>
-	
+
+	<!-- Email field -->
 <div class="col-md-4" id="email">
 	<label for="validationCustomUsername" class="form-label">Email</label>
     <div class="input-group has-validation">
@@ -360,7 +450,7 @@
     </div>
    </div>
  </div>
-	
+		<!-- City Name -->
 <div class="col-md-6" id="city">
 	<label for="validationCustom03" class="form-label">City</label>
 	<input type="text" class="form-control" id="validationCustom03" required>
@@ -368,6 +458,9 @@
     Please provide a valid city.
     </div>
 </div>
+	
+		<!-- State -->
+	
   <div class="col-md-3">
     <label for="validationCustom04" class="form-label">State</label>
     <select class="form-select" id="validationCustom04" required>
@@ -379,6 +472,8 @@
     </div>
   </div>
   
+		<!-- Zip Code -->
+	
 <div class="col-md-3" is="zip">
 	<label for="validationCustom05" class="form-label">Zip</label>
     <input type="text" class="form-control" id="validationCustom05" required>
@@ -387,12 +482,16 @@
     </div>
   </div>
 	
-<div class="col-mb-3">
+<!-- Comments -->
+	
+<div class="col-md-12">
   <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div> 
 	
-<div class="col-12" id="terms">
+	<!-- Terms and Conditions -->
+	
+<div class="col-md-12 p-2" id="terms">
 	<div class="form-check">
 		<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
 		<label class="form-check-label" for="invalidCheck">
@@ -402,57 +501,97 @@
       </div>
     </div>
   </div>
+	
+	<!-- Submit Button -->
 
-<div class="col-12" id="submit">
+<div class="col-md-12" id="submit">
+	<be></be>
 	<button class="btn btn-primary" type="submit">Submit </button>
   </div>
 <!-- End of Form -->
 </form>
 <!-- End of Form Column-->
 </div>
-         <div class="col-lg-3 register-image-row">
-            <div class="register-image-div"><img src="img/love-you-trans-crop.png" class="img-fluid" id="register-main-image" alt="register form love yourself image"/> 
-			 </div>
+         <div class="col-md-3 register-image-row">
+           <div class="register-image-div"><img src="img/love-you-trans-crop-700.png" class="img-fluid" id="register-main-image" alt="register form love yourself image"/> 
+		   </div>
         </div>
     </div>
 </div>
-	<img src="img/waves_bottom.png" class="img-liquid" id="register-bottom-waves" alt="register bottom waves"/> 
-</section>
-
+<img src="img/register-waves-bottom.png" class="img-fluid" id="register-waves-bottom" alt="register waves bottom"/> </section>
+	
+<!-- Start of Footer Section -->
 <footer>
 	
-<section class="d-block footer-section">
-<span class="d-block p-2 address">
-	<p>1919 South Windermere Boulevard</p>
-	<p>Suite 6-A Charleston, SC 29462</p>
-</span>
-<span class="d-block p-2 phone">
-<strong>Phone:</strong> 843-555-1235
-</span>
-<span class="d-block p-2 website">
-<strong>Website:</strong> Please visit <a href="holylotus.net"> holylotus.net</a>
-</span>
-<div id="map"></div>
-<script src="https://maps.googleapis.com/maps/api/jskey=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=initMap">
- </script>
-	<script>
-    onload="InitMap()">
-    <script type="text/javascript">
-    function InitMap() {
-        console.log('at maps');
+<section class="d-block pt-3 footer-section bg-info-subtle">
+
+<div class="container-fluid footer-container">
+    <div class="row footer-row">
+        <div class="col-md-6 footer-col1 bg-info-subtle">
+            <div class="contact">
+<address>
+<strong>Holy Lotus Yoga Studio</strong><br />
+1919 South Windermere Boulevard<br />
+Suite #6-A <br />
+Charleston, SC 29462<br />
+</address>	
+
+<p>Email Inquiries: <a href="mailto:support@holylotus.net">support@holylotus.net</a></p>
+</div>
+
+<!-- Phone Number -->
+
+<p>Call Client Services: <a href="tel:8435551234">843-555-1234</a></p>
+</div>
+
+<div class="col-md-6 footer-col2 bg-info-subtle">
+	
+	<div class="share"><h5>Please share us on social media!</h5></div>
+	
+        <ul class="list-unstyled">
+          <li><i class="bi-lg bi-facebook fs-3"></i></li>
+			<li><i class="bi bi-twitter fs-3"></i></li>
+			<li><i class="bi bi-pinterest fs-3"></i></li>
+			<li><i class="bi bi-youtube fs-3"></i></li>
+        </ul>
+</div>
+    </div>
+</div>
+
+<!-- Address -->
+	
+<div class="copyright">
+<span class="d-block p-2 copyright">
+	<p>© Robert Pfaff, Holy Lotus Yoga LLC, All Rights Reserved, 2023</p></span>
+</div>
+
+
+	
+	
+	
+<!-- JS Code for Google Maps -->
+	
+<script>
+ onload="InitMap()">
+ <script type="text/javascript">
+ function InitMap() {
+ console.log('at maps');
                 var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 10,
                     center: { lat: -34.397, lng: 150.644 }
                 });
     }
-    </script>
-<span class="d-block p-2 copyright">
-	<p>© Robert Pfaff, Holy Lotus Yoga LLC, All Rights Reserved, 2023</p>
-</span> 
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/jskey=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=initMap">
+ </script>
+
 
 </section>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-	</script>	
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>	
 </body>
 </html>
+
+<!-- The End -->
