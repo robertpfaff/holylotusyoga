@@ -118,6 +118,10 @@ body {
 	padding-right: 2rem;
 }
 
+#home_woman {
+	padding-top: 0;
+}
+
 /* orange bubble special offer */
 
 #orange-bubble {
@@ -511,6 +515,8 @@ blockquote cite:before {
 	width: 48%;
 	padding-bottom: 1rem;
 	margin-bottom: 3rem;
+	align-items: center;
+	justify-content: center;
 }
 
 .newsletter-col2 {
@@ -523,7 +529,7 @@ blockquote cite:before {
 
 #image-brain {
 	margin-top: 10px;
-	padding-bottom: 1rem;
+	margin-bottom: 4rem;
 	max-width: 481px;
 	max-height: 469px;
 	min-width: 234px;
@@ -531,8 +537,11 @@ blockquote cite:before {
 }
 
 .brain {
-	text-align: left;
-	padding-right: 2rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.5rem;
 }
 
 #newsletter-button {
@@ -833,16 +842,23 @@ register-container {
 }
 
 /* Footer Copyright Sections*/
-
+	
+.footer-waves {
+	display: flex;
+	position: relative;
+	top: 0px;
+	z-index: 0;
+}
+	
 .footer-col1 {
 	background-color: #89CFF0;
-	color: #1E33B0;
+	color: red;
 	width: 50%;
 }
 	
 .footer-col2 {
 	background-color: #89CFF0;
-	color: #1E33B0;
+	color: #1b1b1b;
 	width: 50%;
 }
 	
@@ -856,7 +872,7 @@ register-container {
 
 .copyright {
 	margin-top: 3rem;
-	font-size: 60%;
+	font-weight: 100;
 }
 
 }
