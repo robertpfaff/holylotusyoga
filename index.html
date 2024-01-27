@@ -7,7 +7,14 @@
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  
-	  <title>Robert Pfaff CSS Flex Club Page Project "Yoga over 50" with Bootstrap 5</title>
+<title>Robert Pfaff CSS Flex Club Page Project "Yoga over 50" with Bootstrap 5</title>
+	  
+	  
+<title>Google Maps Simple Marker</title>
+<!-- The callback parameter is required, so we use console.debug as a noop -->
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=console.debug&libraries=maps,marker&v=beta">
+</script>
+ <link rel="stylesheet" href="css/style.css"/>
 	  
 <!-- Bootstrap Links -->
 
@@ -18,11 +25,6 @@
 	  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-<!-- Google API Script -->
-
-<script
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=initMap" async defer>
-</script>
 
 <link href="css/styles.css" rel="stylesheet">
 	  
@@ -496,7 +498,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJR
 	<!-- Submit Button -->
 
 <div class="col-md-12" id="submit">
-	<button class="btn btn-primary" type="submit">Submit </button>
+	<button class="btn btn-primary" type="submit">Submit</button>
   </div>
 <!-- End of Form -->
 </form>
@@ -508,83 +510,88 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJR
         </div>
     </div>
 </div>
-<img src="img/register-waves-bottom.png" class="img-fluid" id="register-waves-bottom" alt="register waves bottom"> </section>
-	
-<!-- Start of Footer Section -->
-<footer>
-	
-<section class="d-block pt-3 footer-section bg-info-subtle">
+<img src="img/register-waves-bottom.png" class="img-fluid" id="register-waves-bottom" alt="register waves bottom"> 
 
+</section>
+	
+<!-- Start of Footer -->
+<footer>
+<!-- Start of Footer Section -->
+<section class="d-block pt-3 footer-section bg-info-subtle">
+<!-- Start of Fluid Container -->
 <div class="container-fluid footer-container">
-    <div class="row footer-row">
-        <div class="col-md-6 footer-col1 bg-info-subtle">				
+	<!-- Start of Row -->
+<div class="row footer-row">
+	<!-- Start of Column 1 -->
+<div class="col-md-6 footer-col1">				
 				
 <address>
-Created by <a href="mailto:robert@robertpfaff.net"> Robert Pfaff</a><br>
+Created by <a href="mailto:robert@robertpfaff.net">Robert Pfaff</a>
+<br>
 Holy Lotus Yoga Studio<br>
 1911 South Windermere Drive<br>
 Suite #5-A<br>
 Charleston, SC 29684
 </address>
 			
-				
-
-<p>Email Inquiries: <a href="mailto:support@holylotus.net">support@holylotus.net</a></p>
-
+<p>Email Inquiries:</p>
+<p><a href="mailto:support@holylotus.net"></a></p>
 
 <!-- Phone Number -->
 
-<p>Call Client Services: <a href="tel:8435551234">843-555-1234</a></p>
-			
-</div>
-
-<div class="col-md-6 footer-col2 bg-info-subtle">
-	
-	<div class="share"><h5>Please share us on social media!</h5></div>
-	
-        <ul class="list-unstyled">
-          <li><i class="bi bi-facebook fs-3"></i></li>
-			<li><i class="bi bi-twitter fs-3"></i></li>
-			<li><i class="bi bi-pinterest fs-3"></i></li>
-			<li><i class="bi bi-youtube fs-3"></i></li>
-        </ul>
-</div>
-</div>
-</div>
-
-<!-- Address -->
+<p>Please call or text:</p>
+<p><a href="tel:8435551234"></a>843-555-1234</p>
+	<div class="share">
+<p>Please share us on social media!</p>	
+<ul class="list-unstyled">
+<li><i class="bi bi-facebook fs-3"></i></li>
+<li><i class="bi bi-twitter fs-3"></i></li>
+<li><i class="bi bi-pinterest fs-3"></i></li>
+<li><i class="bi bi-youtube fs-3"></i></li>
+</ul>
+		
 	
 <div class="copyright">
-<span class="d-block p-2 copyright">
-	© Robert Pfaff, Holy Lotus Yoga LLC, All Rights Reserved, 2023</span>
+<span class="d-block p-5 copyright">
+	© Holy Lotus Yoga LLC, All Rights Reserved, 2023</span>
+
+<!-- End Copyright Nested-->
+</div>
+<!-- End Social Media Share Request -->
 </div>
 
+<!-- End of Column 1 -->		
+</div>
+		
+<div class="col-md-6 footer-col2">
+	<div id="holy-lotus-map" ></div>
+	<title>Directions to Holy Lotus</title>
+	
+<gmp-map center="32.77644729614258,-79.97477722167969" zoom="14" map-id="holylotusmap">
+      <gmp-advanced-marker position="32.77644729614258,-79.97477722167969" title="Holy Lotus Yoga Studio"></gmp-advanced-marker>
+    </gmp-map>
 
-	
-	
-	
-<!-- JS Code for Google Maps -->
-	
 <script>
- onload="InitMap()">
- <script type="text/javascript">
- function InitMap() {
- console.log('at maps');
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 10,
-                    center: { lat: -34.397, lng: 150.644 }
-                });
-    }
-<div id="map"></div>
-<script src="https://maps.googleapis.com/maps/api/jskey=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=initMap">
+    <gmp-map center="32.77644729614258,-79.97477722167969" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="32.77644729614258,-79.97477722167969" title="Holy Lotus Yoga Studio"></gmp-advanced-marker>
+    </gmp-map>
  </script>
 
-
+<!-- End of Column 2 -->				
+</div>
+<!-- End of Row -->				
+</div>
+<!-- End of Container -->				
+</div>
+	
+<script> async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=console.debug&libraries=maps,marker&v=beta">
+</script>
+	
+<!-- End Section -->				
 </section>
-</footer>
+<!-- End Footer -->				
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>	
+</footer>
 </body>
 </html>
 
