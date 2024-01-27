@@ -8,10 +8,8 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  
 <title>Robert Pfaff CSS Flex Club Page Project "Yoga over 50" with Bootstrap 5</title>
-	  
-	  
-<title>Google Maps Simple Marker</title>
-<!-- The callback parameter is required, so we use console.debug as a noop -->
+  
+<!-- Google Maps: The callback parameter is required, so we use console.debug as a noop -->
 <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=console.debug&libraries=maps,marker&v=beta">
 </script>
  <link rel="stylesheet" href="css/style.css"/>
@@ -517,69 +515,74 @@
 <!-- Start of Footer -->
 <footer>
 <!-- Start of Footer Section -->
-<section class="d-block pt-3 footer-section bg-info-subtle">
+<section class="d-flex pt-3 footer-section">
 <!-- Start of Fluid Container -->
 <div class="container-fluid footer-container">
 	<!-- Start of Row -->
 <div class="row footer-row">
-	<!-- Start of Column 1 -->
+
+<!-- Start of Column 1 -->
 <div class="col-md-6 footer-col1">				
 				
 <address>
-Created by <a href="mailto:robert@robertpfaff.net">Robert Pfaff</a>
-<br>
-Holy Lotus Yoga Studio<br>
+<strong>Holy Lotus Yoga Studio</strong><br>
 1911 South Windermere Drive<br>
 Suite #5-A<br>
 Charleston, SC 29684
 </address>
-			
-<p>Email Inquiries:</p>
-<p><a href="mailto:support@holylotus.net"></a></p>
 
-<!-- Phone Number -->
+<!-- Email -->
+<div class="email"><p>Email Inquiries:</p>
+<p><a href="mailto:support@holylotus.net">support@holylotus.net</a></p>
 
-<p>Please call or text:</p>
-<p><a href="tel:8435551234"></a>843-555-1234</p>
-	<div class="share">
-<p>Please share us on social media!</p>	
-<ul class="list-unstyled">
-<li><i class="bi bi-facebook fs-3"></i></li>
-<li><i class="bi bi-twitter fs-3"></i></li>
-<li><i class="bi bi-pinterest fs-3"></i></li>
-<li><i class="bi bi-youtube fs-3"></i></li>
+</div>	
+	<!-- Phone Number -->
+<div class="phone"><p>Please Call or Text:</p>
+<a href="tel:8435551234">843-555-1234</a>
+<p></p>
+</div>
+
+<!-- Social Media -->
+<div> 
+<p>Please share on social media:</p>
+<ul class="list-unstyled d-flex flex-row bd-highlight mb-3">
+<li><i class="bi bi-facebook p-2 fs-3"></i></li>
+<li><i class="bi bi-twitter p-2 fs-3"></i></li>
+<li><i class="bi bi-pinterest p-2 fs-3"></i></li>
+<li><i class="bi bi-youtube p-2 fs-3"></i></li>
 </ul>
-		
-	
-<div class="copyright">
-<span class="d-block p-5 copyright">
-	© Holy Lotus Yoga LLC, All Rights Reserved, 2023</span>
+</div>
 
+<!-- Copyright -->
+<div class="share">
+<span class="copyright">
+© Holy Lotus Yoga LLC, All Rights Reserved 2023</span>
 <!-- End Copyright Nested-->
 </div>
-<!-- End Social Media Share Request -->
-</div>
 
-<!-- End of Column 1 -->		
+<!-- End of Column 1-->	
 </div>
-		
-<div class="col-md-6 footer-col2">
-	<div id="holy-lotus-map" ></div>
-	<title>Directions to Holy Lotus</title>
 	
-<gmp-map center="32.77644729614258,-79.97477722167969" zoom="14" map-id="holylotusmap">
-      <gmp-advanced-marker position="32.77644729614258,-79.97477722167969" title="Holy Lotus Yoga Studio"></gmp-advanced-marker>
-    </gmp-map>
+<!-- Start of Column 2 -->
+<div class="col-md-6 footer-col2">
 
-<script>
-    <gmp-map center="32.77644729614258,-79.97477722167969" zoom="14" map-id="DEMO_MAP_ID">
-      <gmp-advanced-marker position="32.77644729614258,-79.97477722167969" title="Holy Lotus Yoga Studio"></gmp-advanced-marker>
+<!-- End of Map Title -->
+<h5 id="map-title">Directions to Holy Lotus</h5>
+	
+<!-- Google Map JavaScript API -->
+<gmp-map center="32.77644729614258,-79.97477722167969" zoom="14" map-id="holylotusmap">
+<gmp-advanced-marker position="32.77644729614258,-79.97477722167969" title="Holy Lotus Yoga Studio"></gmp-advanced-marker>
+</gmp-map>
+      
+ <script>
+ <gmp-map center="32.77644729614258,-79.97477722167969" zoom="14" map-id="DEMO_MAP_ID">
+ <gmp-advanced-marker position="32.77644729614258,-79.97477722167969" title="Holy Lotus Yoga Studio"></gmp-advanced-marker>
     </gmp-map>
  </script>
-
-<!-- End of Column 2 -->				
-</div>
-<!-- End of Row -->				
+<!-- End of Column 2 -->
+ </div>
+ 
+ <!--End of Row -->				
 </div>
 <!-- End of Container -->				
 </div>
@@ -587,12 +590,11 @@ Charleston, SC 29684
 <script> async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMvL84d6MuN6LS3BcrKKbFJRYDRat24o&callback=console.debug&libraries=maps,marker&v=beta">
 </script>
 	
-<!-- End Section -->				
+<!-- End of Section -->				
 </section>
-<!-- End Footer -->				
-
+<!-- End pf Footer -->				
 </footer>
+	
+<!-- THE END -->
 </body>
 </html>
-
-<!-- The End -->
