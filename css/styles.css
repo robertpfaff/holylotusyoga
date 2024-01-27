@@ -24,7 +24,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+}	``
 
 #main-nav {
 	padding: .4rem;
@@ -841,6 +841,7 @@ register-container {
 	}
 }
 
+
 /* Footer Copyright Sections*/
 	
 .footer-waves {
@@ -852,7 +853,7 @@ register-container {
 	
 .footer-col1 {
 	background-color: #89CFF0;
-	color: red;
+	color: #1b1b1b;
 	width: 50%;
 }
 	
@@ -860,6 +861,11 @@ register-container {
 	background-color: #89CFF0;
 	color: #1b1b1b;
 	width: 50%;
+}
+	
+title {
+	font-family: "Poppins", sans-serif;
+	padding-bottom: 3rem;
 }
 	
 .phone {
@@ -873,6 +879,4 @@ register-container {
 .copyright {
 	margin-top: 3rem;
 	font-weight: 100;
-}
-
 }
